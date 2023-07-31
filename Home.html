@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="loginform.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg">
+
+	<div >
+		<h1 style="text-align: center; font-size: 70px; color: black; margin-top: 7px;"><a href="Home.html" style="color: black;">Luxurious Landing</a></h1>
+	</div>
+	<div class="menu" style="margin-top: -10px;"><hr>
+	<ul>
+		<li style="padding-left: 100px;"><a class="active" href="Home.html">HOME</a></li>
+  		<li><a href="destination.html">DESTINATION</a></li>
+  		<li><a href="Home.html">EVENTS</a></li>
+  		<li><a href="aboutus.html">ABOUT US</a></li>
+		<li><a href="contactus.html" >CONTACT US</a></li>
+		<li><a href="profile.html" class="fa fa-search" style=" margin-top: -10px; margin-left: 200px; font-size: 32px; "></a></li>
+		<li><a href="login.html" class="fa fa-user-circle" style=" margin-top: -10px; font-size: 32px; "></a></li>
+		<li><a href="profile.html" class="fa fa-bars" style=" margin-top: -10px; font-size: 32px; "></a></li>
+	</ul><hr>
+
+		</div>
+		
+<div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/kerala.jpg" style="width:1270px;%; height:425px;">
+    <div class="text">
+    	<div style="width: 500px ;margin-left:80px;">
+		<h4 style="font-size: 40px; color:black;"> "The journey of  thousand miles begins with a single step . take a step and go where you feel like most alive........."</h4>
+		
+	</div>
+	
+			 <form action="login.php">
+    <button class="btn myBtn" id="myBtn4" style="width:auto;">
+        Take A Step
+      </button>
+
+  </form>
+
+    </div>
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/raj.jpeg" style="width:1270px;%; height:425px;">
+     <div class="text">
+    	<div style="width: 500px ;margin-left:80px;">
+		<h4 style="font-size: 40px; color:black;">  "The journey of  thousand miles begins with a single step . take a step and go where you feel like most alive........."</h4>
+		
+	</div>
+	
+			  <form action="login.php">
+    <button class="btn myBtn" id="myBtn4" style="width:auto;">
+        Take A Step
+      </button>
+
+  </form>
+	
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/konkan.webp" style="width:1270px;%; height:425px;">
+    <div class="text">
+    	<div style="width: 500px ;margin-left:80px;">
+		<h4 style="font-size: 40px; color:black;">  "The journey of  thousand miles begins with a single step . take a step and go where you feel like most alive........."</h4>
+		
+	</div>
+
+			  <form action="login.php">
+    <button class="btn myBtn" id="myBtn4" style="width:auto;">
+        Take A Step
+      </button>
+
+  </form>
+	
+    </div>
+  </div>
+ <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/kashmir.jpg" style="width:1270px;%; height:425px;">
+    <div class="text">
+    	<div style="width: 500px ;margin-left:80px;">
+		<h4 style="font-size: 40px; color:black;">  "The journey of  thousand miles begins with a single step . take a step and go where you feel like most alive........."</h4>
+		
+	</div>
+  <form action="login.php">
+    <button class="btn myBtn" id="myBtn4" style="width:auto;">
+        Take A Step
+      </button>
+
+  </form>
+	 
+    </div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  
+</div>
+<div class="dotbar" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!--  Login form Modal -->
+<div id="id01" class="modal2">
+
+ 
+  <form class="modal-content2 animate"  >
+
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/img_avatar.png" alt="Avatar" class="avatar">
+    </div>
+     <div style="text-align:  center;">
+        
+        <a href="https://en-gb.facebook.com/login/"> <i class="fa fa-facebook-official" style="font-size:36px; color: blue; "></i></a>
+
+       <a> <i class="fa fa-google-plus-square" style="font-size:36px; color: red ; padding-left: 20px;"></i></a>
+       <a href=""> <i class="fa fa-twitter-square" style="font-size:36px;color: #3399ff ; padding-left: 20px;"></i></a>
+      </div>
+
+
+    <div class="containerform ">
+      <label for="uname"><b>Username</b></label>
+      <input class="inptext" type="text" onblur="allLetter(this.value);" placeholder="Enter Username" name="uname" id="uname" >
+       <span id="errortext1" style="color: red; " ></span><br>
+      <label for="psw"><b>Password</b></label>
+      <input class="inppsw" type="password" onblur ="CheckPassword(this.value);" placeholder="Enter Password" name="psw" id="psw" >
+        
+        <span id="errortext2"  style="color: red;" ></span><br>
+      <button onclick="LoginCheck();" class="button2"><b style="font-size: 25px;">Login</b></button><br>
+      
+    </div>
+   
+    <div class="containerform" style="background-color:#f1f1f1; height: 50px;">
+       <span class="acc">
+        <form id="form1" action="register.html">
+        <button type="submit" class="btn" style="width: 200px;margin-left: 20px; margin-top: -20px;" >
+        <a href="register.html" style="color: black;">
+        Dont have an account?</a>
+      </button>
+      </form>
+      </span>
+
+      <span class="psw">
+        <form  id="form2" action="forgot.html">
+      <button type="submit" class="btn" style="width: 200px;margin-right: 20px; margin-top: -20px;">
+          Forgot password?
+        </button>
+       </form>
+      </span>
+      
+    </div>
+  </form>
+
+
+</div>
+
+</body>
+<script type="text/javascript" src="slideshow.js">
+  
+
+</script>
+<script type="text/javascript" src="loginform.js"></script>
+</html>
